@@ -124,7 +124,7 @@ def constrain(input_vel, low_bound, high_bound):
 
 def check_linear_limit_velocity(velocity):
     if TURTLEBOT3_MODEL == 'burger':
-        return constrain(velocity, -BURGER_MAX_LIN_VEL, BURGER_MAX_LIN_VEL)
+        return constrain(velocity, -10, 10)
     else:
         return constrain(velocity, -WAFFLE_MAX_LIN_VEL, WAFFLE_MAX_LIN_VEL)
 
